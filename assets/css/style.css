@@ -1,10 +1,17 @@
+* {
+    box-sizing: border-box;
+}
 
-
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
 
 header {
-background-color: rgb(184, 18, 206);
-text-align: justify;
+    background: rgb(184, 18, 206);
+    text-align: left;
+    display: flex;
+    flex-direction: row;
 }
 
 header h1 {
@@ -17,7 +24,7 @@ header nav {
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
-    float: right;
+    align-content: flex-end;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     text-align: end;
@@ -57,6 +64,14 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
+    
+}
+
+h2 {
+    box-sizing: border-box;
+    color:rgb(13, 12, 83)
+    size: 70%;
 }
 
 .column {
@@ -77,4 +92,24 @@ footer a {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: center;
+}
+
+@media screen and (max-width: 980px) {
+    .ident {
+        width: 50%
+    }
+    header {
+        background: rgb(32, 178, 204);
+    }
+    
+}
+
+@media screen and (max-width: 780px) {
+    .ident {
+        width: 100%
+    }
+    header {
+        background: rgb(255, 246, 125);
+    }
+    
 }
