@@ -3,7 +3,7 @@
 
 
 header {
-background-color: rgb(193, 57, 211);
+background-color: rgb(184, 18, 206);
 text-align: justify;
 }
 
@@ -16,11 +16,11 @@ header h1 {
 header nav {
     display: inline-flex;
     flex-direction: row;
+    flex-wrap: wrap;
     float: right;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     text-align: end;
-    position: 0,0;
 }
 
 header nav ul {
@@ -38,12 +38,20 @@ main {
 
 
 #About-Me {
+    display: inline-flex;
+    flex-direction: row;
+    float: inline-end;
     border: 150px;
     border-color: blue;
     background-color: brown;
     
 }
 
+.row #intro p {
+    display: inline-flex;
+    margin-left: 70rem;
+    
+}
 
 .row {
     display: flex;
