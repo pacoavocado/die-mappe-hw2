@@ -16,18 +16,17 @@ header {
 header h1 {
     /* position:relative; */
     left: 1rem;
-    color:rgb(60, 57, 211)
+    color:rgb(60, 57, 211);
 }
 
 header nav {
     display: inline-flex;
     flex-wrap: wrap;
-    justify-content: end;
-    left: 0;
+    align-items: flex-end;
+    /* right: 0;
+    bottom: 0; */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    text-align: end;
-    margin-left: 55rem;
 }
 
 header nav ul {
@@ -40,7 +39,7 @@ header nav ul li {
 }
 
 main {
-    position:relative;
+    /* position:relative; */
     /* top: 7.5rem; */
 }
 
@@ -48,16 +47,21 @@ main {
 #About-Me {
     display: inline-flex;
     flex-direction: row;
-    border: 150px;
-    border-color: blue;
     background-color: rgb(13, 12, 83);
-    color:rgb(200, 200, 224)
-    
+    color:rgb(200, 200, 224);
+    height: 10rem;
 }
+
+#About-Me section h2 {
+    display: flex;
+    justify-content: center;
+}
+
+
 #About-Me section p {
     margin-left: 15rem;
     margin-right: 1rem;
-    color:rgb(200, 200, 224)
+    color:rgb(200, 200, 224);
 } 
 /* .row #intro p {
     display: inline-flex;
@@ -103,7 +107,7 @@ footer {
 footer  {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
 }
 /* 
