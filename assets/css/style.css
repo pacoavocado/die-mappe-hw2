@@ -1,77 +1,90 @@
 * {
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
     margin: 0;
 }
 
+body {
+    background-color: rgb(200, 200, 224);
+}
+
 header {
+    font-family: Arial, Helvetica, sans-serif;
     background: rgb(184, 18, 206);
-    text-align: left;
-    display: flex;
-    flex-direction: row;
 }
 
 header h1 {
-    position:absolute;
+    /* position:relative; */
     left: 1rem;
     color:rgb(60, 57, 211)
 }
 
 header nav {
     display: inline-flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    align-content: flex-end;
+    justify-content: end;
+    left: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     text-align: end;
+    margin-left: 55rem;
 }
 
 header nav ul {
     list-style-type: none;
+    margin-left: 10rem;
 }
 
 header nav ul li {
-    display: inline-block;
+    display: inline-flex;
 }
 
 main {
-    position:fixed;
-    top: 7.5rem;
+    position:relative;
+    /* top: 7.5rem; */
 }
 
 
 #About-Me {
     display: inline-flex;
     flex-direction: row;
-    float: inline-end;
     border: 150px;
     border-color: blue;
-    background-color: brown;
+    background-color: rgb(13, 12, 83);
+    color:rgb(200, 200, 224)
     
 }
-
-.row #intro p {
+#About-Me section p {
+    margin-left: 15rem;
+    margin-right: 1rem;
+    color:rgb(200, 200, 224)
+} 
+/* .row #intro p {
     display: inline-flex;
     margin-left: 70rem;
-    
-}
+} */
 
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
+    position:relative;   
+}
+
+.row
+
+div {
+    box-sizing: border-box;
+    margin: 3%;
+    color:rgb(13, 12, 83);
+    font-size: 1.5rem;
+    list-style: none;
     
 }
 
-h2 {
-    box-sizing: border-box;
-    color:rgb(13, 12, 83)
-    size: 70%;
+div ul li {
+    list-style-type: none;
+
 }
 
 .column {
@@ -83,17 +96,17 @@ footer {
     background-color: crimson;
     width: 100%;
     height: 5rem;
-    position:fixed;
+    position: fixed;
     bottom:0;
 }
 
-footer a {
-    display: inline-flex;
+footer  {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: center;
 }
-
+/* 
 @media screen and (max-width: 980px) {
     .ident {
         width: 50%
@@ -112,4 +125,4 @@ footer a {
         background: rgb(255, 246, 125);
     }
     
-}
+} */
