@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    top: 10px;
 }
 
 body {
@@ -12,12 +13,11 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(184, 18, 206);
     font-size: 2rem;
-  
-
+    
 }
 
 header h1 {
-    /* position:relative; */
+    position:relative;
     left: 1rem;
     color:rgb(60, 57, 211);
 }
@@ -32,14 +32,15 @@ header nav {
     background: rgba(84, 82, 223, 0.623);
 }
 
- header nav ul {
-     list-style-type: none;
+header nav ul {
+    list-style-type: none;
     display: inline-flex;
     flex-wrap: flex;
     justify-content: space-evenly;
-    float: right;
+    float: inline-end;
     background: rgb(184, 18, 206);
     margin-left: 50rem;
+    width: 100%;
 }
 
 header nav ul li {
@@ -51,44 +52,22 @@ header nav ul li {
     flex: 1 1 200;
 }
 
-#Work div ul li {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    float: right;
-    margin: 1rem;
+header nav ul li a {
+    color:rgb(60, 57, 211);
+    justify-content: space-between;
+    padding-left: 1.2rem;
 }
 
-.card {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 1rem;
-    /* flex: 1 .5 0; */
-    text-align: center;
-    border-style: solid;
-    border-width: .2rem;
-    float: right;
-}
 
-.card1 {
-    
-    size: 200%;
 
-}
-
-.card header {
-    text-align: center;
-    color:rgb(208, 211, 57)
-
-}
 .About-Me {
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
     background: rgb(13, 12, 83);
     color:rgb(200, 200, 224);
-    height: 10rem;
+    height: 25rem;
+    width: 100%;
     font-size: 20px;
 }
 
@@ -103,12 +82,30 @@ header nav ul li {
 
 
 .About-Me section p {
+    display: flex;
+    justify-content: flex-end;
     font-size: 20px;
-    margin-left: 15rem;
+    margin-left: 25rem;
     margin-right: 1rem;
-    /* color:rgb(200, 214, 224); */
+    color:rgb(200, 214, 224);
 } 
 
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    border-style: solid;
+    border-width: .2rem;
+    float: right;
+}
+
+.card header {
+    text-align: center;
+    color:rgb(208, 211, 57)
+}
 
 
 .card ul li h3 img p {
@@ -124,9 +121,22 @@ header nav ul li {
 
 .card ul li {
     list-style-type: none;
-
+    
 }
 
+#Work div ul li {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    float: right;
+    margin: 1rem;
+}
+
+#Resume {
+    display: inline-flex;
+    flex-direction: column;
+    align-content: center;
+}
 
 footer {
     background-color: crimson;
@@ -134,31 +144,28 @@ footer {
     height: 5rem;
     position: relative;
     bottom:0;
-}
-
-footer  {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
 }
-/* 
-@media screen and (max-width: 980px) {
-    .ident {
+
+@media screen and (max-width: 1440) {
+    .card {
         width: 50%
     }
     header {
-        background: rgb(32, 178, 204);
+        color: rgb(204, 72, 32);
     }
     
 }
 
-@media screen and (max-width: 780px) {
-    .ident {
+@media screen and (max-width: 720px) {
+    .card {
         width: 100%
     }
     header {
         background: rgb(255, 246, 125);
     }
     
-} */
+}
