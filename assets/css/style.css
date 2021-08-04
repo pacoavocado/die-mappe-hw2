@@ -11,6 +11,9 @@ body {
 header {
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(184, 18, 206);
+    font-size: 2rem;
+  
+
 }
 
 header h1 {
@@ -23,84 +26,113 @@ header nav {
     display: inline-flex;
     flex-wrap: wrap;
     align-items: flex-end;
-    /* right: 0;
-    bottom: 0; */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
+    justify-content: space-between;
+    right: 0;
+    float: right;
+    background: rgba(84, 82, 223, 0.623);
 }
 
-header nav ul {
-    list-style-type: none;
-    margin-left: 10rem;
+ header nav ul {
+     list-style-type: none;
+    display: inline-flex;
+    flex-wrap: flex;
+    justify-content: space-evenly;
+    float: right;
+    background: rgb(184, 18, 206);
+    margin-left: 50rem;
 }
 
 header nav ul li {
     display: inline-flex;
-}
-
-main {
-    /* position:relative; */
-    /* top: 7.5rem; */
-}
-
-
-#About-Me {
-    display: inline-flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    background-color: rgb(13, 12, 83);
+    padding-right: 1rem;
+    justify-content: space-around;
+    flex: 1 1 200;
+}
+
+#Work div ul li {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    float: right;
+    margin: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 1rem;
+    /* flex: 1 .5 0; */
+    text-align: center;
+    border-style: solid;
+    border-width: .2rem;
+    float: right;
+}
+
+.card1 {
+    
+    size: 200%;
+
+}
+
+.card header {
+    text-align: center;
+    color:rgb(208, 211, 57)
+
+}
+.About-Me {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: rgb(13, 12, 83);
     color:rgb(200, 200, 224);
     height: 10rem;
+    font-size: 20px;
 }
 
-#About-Me section h2 {
+.About-Me h2 {
+    font-size: 2.5rem;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* margin-left: 25rem; */
 }
 
 
-#About-Me section p {
+.About-Me section p {
+    font-size: 20px;
     margin-left: 15rem;
     margin-right: 1rem;
-    color:rgb(200, 200, 224);
+    /* color:rgb(200, 214, 224); */
 } 
-/* .row #intro p {
-    display: inline-flex;
-    margin-left: 70rem;
-} */
 
-.row {
+
+
+.card ul li h3 img p {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    position:relative;   
-}
-
-.row
-
-div {
+    flex: 1 1 0;
     box-sizing: border-box;
-    margin: 3%;
     color:rgb(13, 12, 83);
     font-size: 1.5rem;
     list-style: none;
     
 }
 
-div ul li {
+.card ul li {
     list-style-type: none;
 
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-}
 
 footer {
     background-color: crimson;
     width: 100%;
     height: 5rem;
-    position: fixed;
+    position: relative;
     bottom:0;
 }
 
