@@ -1,171 +1,105 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
     margin: 0;
-    top: 10px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: rgb(200, 200, 224);
+    background-image: linear-gradient(
+        rgba(63, 13, 65, 0.452) 0%,
+        rgba(236, 102, 229, 0.6) 100%
+    );
 }
 
 header {
-    font-family: Arial, Helvetica, sans-serif;
-    background: rgb(184, 18, 206);
-    font-size: 2rem;
-    
-}
-
-header h1 {
-    position:relative;
-    left: 1rem;
-    color:rgb(60, 57, 211);
-}
-
-header nav {
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
-    right: 0;
-    float: right;
-    background: rgba(84, 82, 223, 0.623);
-}
-
-header nav ul {
-    list-style-type: none;
-    display: inline-flex;
-    flex-wrap: flex;
-    justify-content: space-evenly;
-    float: inline-end;
-    background: rgb(184, 18, 206);
-    margin-left: 50rem;
-    width: 100%;
-}
-
-header nav ul li {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-right: 1rem;
-    justify-content: space-around;
-    flex: 1 1 200;
-}
-
-header nav ul li a {
-    color:rgb(60, 57, 211);
-    justify-content: space-between;
-    padding-left: 1.2rem;
-}
-
-
-
-.About-Me {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background: rgb(13, 12, 83);
-    color:rgb(200, 200, 224);
-    height: 25rem;
-    width: 100%;
-    font-size: 20px;
-}
-
-.About-Me h2 {
-    font-size: 2.5rem;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start;
-    /* margin-left: 25rem; */
+    justify-content: space-between;
+    height: 20vh;
+    color: white;
 }
 
+header a {
+    margin-left: 10px;
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+}
 
-.About-Me section p {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 20px;
-    margin-left: 25rem;
-    margin-right: 1rem;
-    color:rgb(200, 214, 224);
-} 
+nav {
+    padding: 20px 20px;
+}
 
+h2 {
+    color:aqua;
+}
+
+#work {
+}
 
 .card {
+    max-width: 70vw;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    padding: 1rem;
-    text-align: center;
-    border-style: solid;
-    border-width: .2rem;
-    float: right;
+    border: 2px solid black;
+    margin: 10px 10px;
 }
 
-.card header {
-    text-align: center;
-    color:rgb(208, 211, 57)
-}
-
-
-.card ul li h3 img p {
+.card2 {
     display: flex;
-    flex-direction: row;
-    flex: 1 1 0;
-    box-sizing: border-box;
-    color:rgb(13, 12, 83);
-    font-size: 1.5rem;
-    list-style: none;
+    flex-direction: column;
+    border: 2px solid black;
+    margin: 10px 10px;
+}
+
+#card1 img {
+    max-width: 70vw;
+    height: auto;
+}
+#card2 img {
+    max-width: 30vw;
+    height: auto;
+}
+#card3 img {
+    max-width: 30vw;
+    height: auto;
+}
+#card4 img {
+    max-width: 30vw;
+    height: auto;
+}
+#card5 img {
+    max-width: 30vw;
+    height: auto;
+}
+
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right {
+    width: 70vw;
+    justify-content: flex-end;
     
 }
 
-.card ul li {
-    list-style-type: none;
-    
-}
-
-#Work div ul li {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    float: right;
-    margin: 1rem;
-}
-
-#Resume {
-    display: inline-flex;
-    flex-direction: column;
-    align-content: center;
+.card {
 }
 
 footer {
-    background-color: crimson;
-    width: 100%;
-    height: 5rem;
-    position: relative;
-    bottom:0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
 }
 
-@media screen and (max-width: 1440) {
-    .card {
-        width: 50%
-    }
-    header {
-        color: rgb(204, 72, 32);
-    }
-    
-}
-
-@media screen and (max-width: 720px) {
-    .card {
-        width: 100%
-    }
-    header {
-        background: rgb(255, 246, 125);
-    }
-    
+footer a {
+    font-size: larger;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
 }
