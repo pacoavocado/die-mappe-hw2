@@ -5,29 +5,30 @@
 }
 
 body {
-    background-image: url(/assets/images/gotime.jpg);
+    /* background-image: url(/assets/images/gotime.jpg); */
     background-position: center;
     /* display:flex; */
 }
 
 header {
     display: flex;
-    flex-direction: row;
+    flex: 0 4 auto;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     height: 20vh;
-    color: white;
+    font-size: 4em;
 }
 
 header a {
-    margin-left: 10px;
     font-size: larger;
     font-weight: bolder;
     cursor: pointer;
-    color: white;
+    /* color: white; */
 }
 
 nav {
-    padding: 20px 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .abtPic {
@@ -38,17 +39,17 @@ nav {
 }
 
 #description {
-    color: rgb(255, 0, 234);
+    /* color: rgb(255, 0, 234); */
 }
 
 h2 {
-    color:aqua;
+    /* color:aqua; */
 }
 
 
 
 #work, a{ 
-    color:blanchedalmond;
+    /* color:blanchedalmond; */
     
 }
 
@@ -73,23 +74,23 @@ h2 {
     align-content: center;
 }
 #card1 img {
-    max-width: 30vw;
+    /* max-width: 30vw; */
     height: auto;
 }
 #card2 img {
-    max-width: 30vw;
+    /* max-width: 30vw; */
     height: auto;
 }
 #card3 img {
-    max-width: 20vw;
+    /* max-width: 20vw; */
     height: auto;
 }
 #card4 img {
-    max-width: 30vw;
+    /* max-width: 30vw; */
     height: auto;
 }
 #card5 img {
-    max-width: 30vw;
+    /* max-width: 30vw; */
     height: auto;
 }
 
@@ -100,7 +101,7 @@ h2 {
 }
 
 .right {
-    width: 70vw;
+    /* width: 70vw; */
     justify-content: flex-end;
     
 }
@@ -120,5 +121,5 @@ footer a {
     font-size: larger;
     font-weight: bolder;
     cursor: pointer;
-    color: white;
+    /* color: white; */
 }
