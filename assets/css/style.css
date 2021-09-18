@@ -42,30 +42,6 @@ nav {
     
 }
 
-#description {
-    /* color: rgb(255, 0, 234); */
-}
-
-h2 {
-    /* color:aqua; */
-}
-
-
-
-#work, a{ 
-    /* color:blanchedalmond; */
-    
-}
-
-.card {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    border: 2px solid black;
-    margin: 10px 10px;
-}
 
 .card2 {
     display: flex;
@@ -123,19 +99,4 @@ footer a {
     font-weight: bolder;
     cursor: pointer;
     /* color: white; */
-}
-
-@media screen and (max-width: 360px)   {
-    
-    header {
-        font-size: 1.5em;
-    }
-
-    nav {
-        font-size: .6em;
-    }
-    img {
-        position: relative;
-        right: 
-    }
 }
