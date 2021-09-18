@@ -12,16 +12,20 @@ body {
 
 header {
     display: flex;
-    flex: 0 4 auto;
+    /* flex: 0 4 auto; */
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 20vh;
+    /* height: 20vh; */
     font-size: 4em;
 }
 
+h1 {
+    font-size: smaller;
+}
+
 header a {
-    font-size: larger;
+    font-size: large;
     font-weight: bolder;
     cursor: pointer;
     /* color: white; */
@@ -34,7 +38,7 @@ nav {
 .abtPic {
     border-radius: 12em;
     position: relative;
-    left: 15em;
+    left: 2.5em;
     
 }
 
@@ -54,7 +58,7 @@ h2 {
 }
 
 .card {
-    max-width: 70vw;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,23 +79,23 @@ h2 {
 }
 #card1 img {
     /* max-width: 30vw; */
-    height: auto;
+    width: auto;
 }
 #card2 img {
     /* max-width: 30vw; */
-    height: auto;
+    width: auto;
 }
 #card3 img {
     /* max-width: 20vw; */
-    height: auto;
+    width: auto;
 }
 #card4 img {
     /* max-width: 30vw; */
-    height: auto;
+    width: auto;
 }
 #card5 img {
     /* max-width: 30vw; */
-    height: auto;
+    width: auto;
 }
 
 
@@ -104,9 +108,6 @@ h2 {
     /* width: 70vw; */
     justify-content: flex-end;
     
-}
-
-.card {
 }
 
 footer {
@@ -122,4 +123,19 @@ footer a {
     font-weight: bolder;
     cursor: pointer;
     /* color: white; */
+}
+
+@media screen and (max-width: 360px)   {
+    
+    header {
+        font-size: 1.5em;
+    }
+
+    nav {
+        font-size: .6em;
+    }
+    img {
+        position: relative;
+        right: 
+    }
 }
